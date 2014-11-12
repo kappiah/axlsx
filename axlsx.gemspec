@@ -16,12 +16,12 @@ Gem::Specification.new do |s|
   s.files = Dir.glob("{lib/**/*,examples/**/*.rb,examples/**/*.jpeg}") + %w{ LICENSE README.md Rakefile CHANGELOG.md .yardopts }
   s.test_files  = Dir.glob("{test/**/*}")
 
-  s.add_runtime_dependency 'nokogiri', '>= 1.4.1'
-  s.add_runtime_dependency 'rubyzip', '>= 0.9.5'
-  s.add_runtime_dependency "htmlentities", "~> 4.3.1"
+  s.add_runtime_dependency 'nokogiri', '1.5.2'
+  s.add_runtime_dependency 'rubyzip', '0.9.9'
+  s.add_runtime_dependency "htmlentities", "4.3.1"
 
-  s.add_development_dependency 'yard'
-  s.add_development_dependency 'kramdown'
+  # s.add_development_dependency 'yard'
+  # s.add_development_dependency 'kramdown'
   s.required_ruby_version = '>= 1.8.7'
   s.require_path = 'lib'
 end
